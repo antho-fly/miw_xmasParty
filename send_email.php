@@ -34,7 +34,7 @@ try {
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Invitation Xmas Party';
+    $mail->Subject = 'Invitation pour la Xmas Party le jeudi 17 décembre 2020';
     $mail->Body = file_get_contents('email/email_party.html');
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 

@@ -15,6 +15,7 @@ if (isset($_GET['delivery']) and $_GET['delivery'] == "sent") {
 }
 
 ?>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -28,11 +29,11 @@ if (isset($_GET['delivery']) and $_GET['delivery'] == "sent") {
                 <input id="email" class="inpForm" type="email" name="email" placeholder="Ton email de star..." required aria-label="Input Email"/>
                 <button class="bg-mauve inpSub" type="submit">
                     Inscris-toi !
-                    <img class="vip" src="images/icones/vip.png">
+                    <img class="vip" src="images/icones/vip.png" alt="logo du bouton">
                 </button>
             </form>
             <div class="cadreEmailSend <?php echo $send?>">
-                <img src="images/icones/send.png">
+                <img src="images/icones/send.png" alt="logo lors de l'envoi validé">
             </div>
         </div>
     </body>
