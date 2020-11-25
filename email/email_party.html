@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html,body,td,tr {
+            margin : 0;
+            padding: 0;
+        }
+        h2 {
+            font-size: 25px;
+            color    : #354052;
+            padding  : 0 10px
+        }
+        h3 {
+            font-size: 20px;
+            color    : #354052;
+        }
+        .container {
+            width            : 100%;
+            font-weight      : bold;
+            font-family      : Arial, sans-serif;
+            background-image : url("http://localhost/tpMail/miw_day3-master/images/fond.jpg");
+            background-repeat: no-repeat;
+        }
+        .header {
+            display   : block;
+            text-align: right;
+            width     : 100%;
+            color     : white;
+        }
+        p{
+            font-size: 20px;
+        }
+        .titre {
+            padding-right : 40px;
+            padding-top   : 150px;
+            padding-bottom: 20px;
+        }
+        .places {
+            padding-top   : 30px;
+            padding-bottom: 25px;
+        }
+        .element {
+            width : 100%;
+            border: 1px solid white;
+            background-color: white;
+        }
+        .informations {
+            width: 100%;
+        }
+        .informations > td {
+            font-weight: normal;
+            display    : block;
+            width      : 30%;
+            margin     : 50px auto;
+        }
+        .photos {
+            width: 100%;
+        }
+        img .photos {
+            width: 60%;
+        }
+        .photos > tr {
+            width: 100%;
+        }
+        .photos > td {
+            font-weight: normal;
+            display    : block;
+            margin     : 5% auto;
+        }
+        .bouton {
+            height       : 85px;
+            width        : 100%;
+            border-radius: 10px;
+            background-color: #C30078;
+        }
+        .bouton > h2 > a {
+            text-decoration: none;
+            width          : 100%;
+            color          : white;
+        }
+        .legal {
+            width      : 100%;
+            padding    : 2rem 1rem;
+            font-weight: normal;
+            color      : #354052;
+            background-color: #F5F5F5;
+            font-size: 16px;
+        }
+        .sociaux {
+            display: inline-block;
+        }
+        .sociaux > a {
+            padding: 0 15px 15px 15px;
+            
+        }
+        .sociaux >a>img
+        {
+            height: 22px;
+        }
+        .desktop {
+            display: none;
+        }
+        
+        @media screen and  (min-width: 769px) {
+            .container {
+                width : 700px;
+                border: 1px solid #cccccc;
+                margin: 0 auto;
+            }
+            .element, .titre {
+                width : 80%;
+                margin: 0 auto 50px auto;
+            }
+            
+            .titre {
+                padding-top   : 250px;
+                padding-right : 0;
+                padding-bottom: 0;
+            }
+            .informations > td {
+                display: inline-block;
+            }
+            .photos > td {
+                display: inline-block;
+                width  : 50%;
+            }
+            .numTel {
+                display: block;
+                margin-top: -15px;
+                font-weight: bold;
+            }
+            .descPhoto {
+                font-size: 15px;
+            }
+            .nom {
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table class="container">
+        <tr>
+            <td class="header">
+                <div class="titre">
+                    <p style="font-size: 60px; margin-bottom:-30px">XMAS PARTY</p>
+                    <p style="font-weight: normal;font-size: 30px;">Jeudi 19 dec à Gap</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td width="100%">
+                <table class="element" align="center">
+                    <tr>
+                        <td>
+                            <table width="100%">
+                                <tr>
+                                    <td align="center">
+                                        <h3 class="places">!! PLACES LIMITÉES !!</h3>
+                                        <h2>A La + Grosse Soirée Etudiante</h2>
+                                    </td>
+                                </tr>
+                                <tr class="informations" align="center">
+                                    <td align="center">
+                                        <img src="http://localhost/tpMail/miw_day3-master/email/images/icones/png/map.png" alt="logo map">
+                                        <p>1<sup>er</sup> étage Batiment MIW 15/12/2019 à 20h</p>
+                                    </td>
+                                    <td align="center">
+                                        <img src="http://localhost/tpMail/miw_day3-master/email/images/icones/png/play.png" alt="logo bouton play">
+                                        <p>RnB, Hip Hop, Latino, House, Electro</p>
+                                    </td>
+                                    <td align="center">
+                                        <img src="http://localhost/tpMail/miw_day3-master/email/images/icones/png/euro.png" alt="logo euro">
+                                        <p>15€ + 1 conso <span style="font-size: 15px;"><br>(sur présentation de cet email)</span></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width:100%; font-size: 30px;" align="center">
+                            <h2>La meilleur soirée étudiante de noël à Gap, avec en guess star 4 navigatrices !</h2>
+                            <table width="100%">
+                                <tr class="photos">
+                                    <td align="center">
+                                        <img src="http://localhost/tpMail/miw_day3-master/email/images/explorer.jpg" alt="Internet explorer">
+                                        <h3 class="nom">Miss Edge</h3>
+                                        <p class="descPhoto">A besoin de beaucoup d’attention !</p>
+                                    </td>
+                                    <td align="center">
+                                        <img src="http://localhost/tpMail/miw_day3-master/email/images/firefox.jpg" alt="Firefox">
+                                        <h3 class="nom">Miss Firefox</h3>
+                                        <p class="descPhoto">Libre et sauvage, tel un renard !</p>
+                                    </td>
+                                    <td align="center">
+                                        <img src="http://localhost/tpMail/miw_day3-master/email/images/opera.jpg" alt="Opera">
+                                        <h3 class="nom">Miss Opera</h3>
+                                        <p class="descPhoto">La norvégienne discrète et astucieuse</p>
+                                    </td>
+                                    <td align="center">
+                                        <img src="http://localhost/tpMail/miw_day3-master/email/images/safari.jpg" alt="Safari">
+                                        <h3 class="nom">Miss Safari</h3>
+                                        <p class="descPhoto">Ne perd pas le Nord !</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="bouton" align="center">
+                            <h2><a href="#">Inscription sur @miw05</a></h2>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table width="100%">
+                    <tr align="center">
+                        <td class="legal">
+                            <div class="sociaux">
+                                <a href="#"><img src="http://localhost/tpMail/miw_day3-master/email/images/icones/png/facebook.png" alt="logo facebook"></a>
+                                <a href="#"><img src="http://localhost/tpMail/miw_day3-master/email/images/icones/png/twitter.png" alt="logo twitter"></a>
+                                <a href="#"><img src="http://localhost/tpMail/miw_day3-master/email/images/icones/png/instagram.png" alt="logo instagram"></a>
+                            </div>
+                            <p>Copyright © 2020 <span style="font-weight: bold;">MIW’x.</span> All Rights Reserved.</p>
+                            <p class="numTel">miw@miw.com | 06 07 08 09 10</p>
+                            <a href="#">Se désabonner</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
