@@ -1,17 +1,24 @@
 <?php
+//si l'utilisateur a post son email
 if (isset($_POST['email'])) {
 
+    //on le redirige vers send_email avec son adresse mail en parametre
     header('Location: send_email.php?email=' . $_POST['email']);
     exit;
 }
 
-$form = "formulaire";
-$send = 'hide';
 
 
+//si l'email a été envoyé (delivery == sent)
 if (isset($_GET['delivery']) and $_GET['delivery'] == "sent") {
+    //on cache le formulaire et on montre l'icone du mail envoyé
     $form = 'hide';
     $send = 'show';
+}//sinon
+else{
+    //on affiche le formulaire et on cache l'image du mail
+    $form = "formulaire";
+    $send = 'hide';
 }
 
 ?>
